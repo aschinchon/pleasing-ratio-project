@@ -41,8 +41,7 @@ dashboardBody(
                 radioButtons("choice", 
                              "Which one do you like most?",
                              c("Option A" = "A",
-                               "Option B" = "B",
-                               "I'm not sure" = "N"), 
+                               "Option B" = "B"), 
                              inline = TRUE, 
                              selected=character(0)))
               ),
