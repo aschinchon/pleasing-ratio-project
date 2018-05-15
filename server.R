@@ -14,7 +14,7 @@ shinyServer(function(input, output,session) {
                     ymin=0, 
                     ymax=1/sqrt(sample_ratios[1]))) +
       scale_x_continuous(limits=c(0,max_ratio), expand=c(0,0)) +
-      scale_y_continuous(limits=c(0,1)) +
+      scale_y_continuous(limits=c(0,1), expand=c(0,0)) +
       coord_fixed() +
       theme_void()
   })
@@ -29,7 +29,7 @@ shinyServer(function(input, output,session) {
                     ymin=0, 
                     ymax=1/sqrt(sample_ratios[2]))) +
       scale_x_continuous(limits=c(0,max_ratio), expand=c(0,0))+
-      scale_y_continuous(limits=c(0,1))+
+      scale_y_continuous(limits=c(0,1), expand=c(0,0))+
       coord_fixed() +
       theme_void()
   })
