@@ -28,7 +28,7 @@ shinyServer(function(input, output,session) {
                     xmax=sqrt(sample_ratios[2])+(max_ratio-sqrt(sample_ratios[2]))/2, 
                     ymin=0, 
                     ymax=1/sqrt(sample_ratios[2]))) +
-      scale_x_continuous(limits=c(0,max_ratio))+
+      scale_x_continuous(limits=c(0,max_ratio), expand=c(0,0))+
       scale_y_continuous(limits=c(0,1))+
       coord_fixed() +
       theme_void()
