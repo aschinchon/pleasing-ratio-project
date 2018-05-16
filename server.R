@@ -96,13 +96,15 @@ shinyServer(function(input, output,session) {
    highchart() %>%
      hc_title(text = "The Pleasing Ratio Project") %>%
      hc_subtitle(text = "Victories and games played by ratio") %>%
-     hc_xAxis(title = list(text = "Ratio"), categories = results_def$ratio) %>%
+     hc_xAxis(title = list(text = "Ratio"), 
+              labels = list(rotation=-90, style = list(fontSize = "10px")),
+              categories = results_def$ratio) %>%
      hc_yAxis_multiples(
        list(title = list(text = "% victories"), max = 100, labels = list(format = "{value}%", useHTML = TRUE)),
        list(title = list(text = "# games played"), opposite = TRUE)
      ) %>%
      hc_add_series(yAxis = 0, name = "% victories", data = results_def$wins*100,  marker = list(enabled = FALSE), color="blue", type="column") %>%
-     hc_add_series(yAxis = 1, name = "# games played", data = results_def$matchs,  marker = list(enabled = FALSE), color="lightblue") %>%
+     hc_add_series(yAxis = 1, name = "# games played", data = results_def$matchs,  marker = list(enabled = FALSE), color="gold") %>%
      hc_exporting(enabled = TRUE) %>%
      hc_chart(zoomType = "xy")
  })
