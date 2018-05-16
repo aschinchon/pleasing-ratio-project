@@ -19,15 +19,42 @@ Will I obtain the same results as Fechner?
 The project is available [here](http://91.134.134.147:3838/pleasing-ratio-project)
 There is also a post in [Fronkonstin](https://fronkonstin.com/2018/05/15/the-pleasing-ratio-project/) explaining it
 
-## Built With
+## Dependencies
 
-The project is developed with [R](http://www.cran.r-project.org/) and the following packages:
+The project is developed in [R](http://www.cran.r-project.org/) with the following packages:
 
   * [Shiny](http://shiny.rstudio.com/) - To build the web App
   * [shinyjs](https://cran.r-project.org/web/packages/shinyjs/index.html) - To improve the Shiny apps with some JavaScript
   * [shinydashboard](https://cran.r-project.org/web/packages/shinyjs/index.html) - Used to give the App a dashboard appearance
   * [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html) - To create the rectangles
 
+### General Purpose Dependencies
+
+These are dependencies used for internal operations and presentation tasks:
+
+  * [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html)
+  * [highcharter](https://cran.r-project.org/web/packages/highcharter/index.html)
+  * [markdown](https://cran.r-project.org/web/packages/markdown/index.html)
+
+## Running Instructions
+
+Run the following commands in order to download the project:
+
+```
+$ git clone git@github.com:aschinchon/pleasing-ratio-project.git
+$ R
+```
+
+Once inside R, run the following code (make sure all your dependencies are installed
+prior to this):
+
+```r
+library(shiny)
+runApp("pleasing-ratio-project")
+```
+
+If everything goes smoothly, a web browser should open showing the project's
+main page.
 
 
 ## Authors
