@@ -6,7 +6,7 @@ This serious man on the left is Gustav Theodor Fechner, a German philosopher, ph
 
 Fechners's experiment was simpler than this one: he presented just ten rectangles to 82 students. Then he asked each of them to choose the most pleasing one and obtained revealing discoveries I will not explain here since would cause bias in my experiment.
 
-Even my experiment is absolutely inspired by his own one, there are some differences. I can explore a bigger set of ratios doing an A/B test and I introduce the option *I'm not sure*. It makes this one a bit more complex and richer.
+Although my experiment is absolutely inspired in Fechner’s one, there is a important difference: I can explore a bigger set of ratios doing an A/B test. This makes this one a bit richer.
 
 The experiment has also interesting technical features: the use of `shinydashboard` package to arrange the App, the use of `shinyjs` package to add javaScript to refresh page when use choose to play again, to save votes in a text file and to read it to visualize results.
 
