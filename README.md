@@ -41,7 +41,7 @@ These are dependencies used for internal operations and presentation tasks:
 Run the following commands in order to download the project:
 
 ```
-$ git clone git@github.com:aschinchon/pleasing-ratio-project.git
+$ git clone https://github.com/aschinchon/pleasing-ratio-project.git
 $ R
 ```
 
